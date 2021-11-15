@@ -1,0 +1,17 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+    <div class="list-images">
+        {% for data in arrayData %}
+            <figure class='list-images__item'>
+                <a href='twoPage.php?photo={{ data.url_img_big }}'>
+                    <img src='{{ data.url_img_mini }}' class='list-images__photo' alt='photo'>
+                </a>
+                <figcaption class='list-images__name'>{{ data.filename }}
+                    <span class='list-images__text'>
+                    (размер оригинала: {{ data.size }})</span>
+                </figcaption>
+            </figure>
+        {% endfor %}
+    </div>
+{% endblock %}

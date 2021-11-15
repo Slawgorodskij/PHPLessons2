@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+    <div class="title">
+        <img src='{{ photo }}' class='list-images__photo' alt='photo'>
+        <p>Эту картинку просмотрели: {{ imageBig.viewCount }} раз(а) </p>
+    </div>
+
+    <div class="list-images">
+        {% for image in threeImages %}
+            <figure class='list-images__item'>
+                <a href='twoPage?photo={{ image.urlImgBig }}'>
+                    <img src='{{ image.Image.urlImgMini }}' class='list-images__photo' alt='photo'>
+                </a>
+                <figcaption class='list-images__name'>{{ image.Image.name }}
+                    <span class='list-images__text'>
+                            (размер оригинала: {{ image.sizeImgBig }})</span>
+                </figcaption>
+            </figure>
+        {% endfor %}
+    </div>
+
+{% endblock %}

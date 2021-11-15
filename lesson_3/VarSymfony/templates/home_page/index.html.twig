@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h1 class="title">{{ title }}</h1>
+
+    <div class="list-images">
+        {% for image in allImagesBig %}
+            <figure class='list-images__item'>
+                <a href='twoPage?photo={{ image.urlImgBig }}'>
+                    <img src='{{ image.Image.urlImgMini }}' class='list-images__photo' alt='photo'>
+                </a>
+                <figcaption class='list-images__name'>{{ image.Image.name }}
+                    <span class='list-images__text'>
+                            (размер оригинала: {{ image.sizeImgBig }})</span>
+                </figcaption>
+            </figure>
+        {% endfor %}
+    </div>
+
+    {% endblock %}
