@@ -1,0 +1,24 @@
+{% extends 'base.twig' %}
+
+{% block body %}
+    <h1 class="title">{{ title }}</h1>
+    <div class="product-items grid">
+        {% for data in arrayData %}
+            <figure class='product'>
+                <div class='product__photo'>
+                   <img class='product__image' src='{{ data.url_img }}' alt='{{ data.name }}'>
+                </div>
+                <figcaption class='product__text product-text'>
+                    <h2 class='product-text__title'>{{ data.name }}</h2>
+                    <p class='product-text__description'>{{ data.description }}</p>
+                    <h3 class='product-text__price'>{{ data.price }}</h3>
+                </figcaption>
+            </figure>
+        {% endfor %}
+    </div>
+
+        <form action="../Engine/dataBase.php" method="GET">
+            <button class="btn">Добавить еще</button>
+        </form>
+
+{% endblock %}
