@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="title">{{ title }}</h1>
+        <div class="product-items grid">
+            {% for product in AllProducts %}
+                <figure class="product">
+                    <img src="https://picsum.photos/250/250" alt="картинка">
+                    <figcaption>
+                        <h2>{{ product.name }}</h2>
+                        <p>{{ product.description }}</p>
+                        <p>$ {{ product.price }}</p>
+                    </figcaption>
+                </figure>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

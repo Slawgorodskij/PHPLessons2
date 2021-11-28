@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="ru" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="u3I07BJ" resname="regTitle">
+        <source>regTitle</source>
+        <target>Регистрация</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ1" resname="regName">
+         <source>regName</source>
+         <target>Ваше имя </target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ2" resname="regPhone">
+         <source>regPhone</source>
+         <target>Ваш номер телефона</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ3" resname="email">
+         <source>email</source>
+         <target>Email</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ4" resname="password">
+         <source>password</source>
+         <target>Пароль</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ5" resname="repeatPassword">
+         <source>repeatPassword</source>
+         <target>Повторите пароль</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ6" resname="regSubmit">
+         <source>regSubmit</source>
+         <target>Сохранить</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ7" resname="prodName">
+         <source>prodName</source>
+         <target>Название продукта</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ8" resname="prodDescription">
+         <source>prodDescription</source>
+         <target>Описание продукта</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ9" resname="prodPrice">
+         <source>prodPrice</source>
+         <target>Цена продукта</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ10" resname="addProdSubmit">
+         <source>addProdSubmit</source>
+         <target>Добавить продукт</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ11" resname="prodTitle">
+         <source>prodTitle</source>
+         <target>Страница добавления товара</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
